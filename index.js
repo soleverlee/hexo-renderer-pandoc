@@ -4,6 +4,7 @@ var pandocRenderer = function(data, options, callback){
   var config = hexo.config.pandoc;
   var extensions = '', filters = [], extra = [], meta = [], math = '--mathjax';
 
+  console.log('~~~~~~~~~~~~~~~~~~~~~');
   if(config) {
     if(config.extensions) {
       config.extensions.forEach(function(extension) {
